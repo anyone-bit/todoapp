@@ -1,0 +1,74 @@
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Main box */
+.container {
+    width: 400px;
+    margin: 100px auto;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px #222;
+}
+
+h2 {
+    color: #fff;
+}
+
+/* Input field */
+input {
+    width: 70%;
+    padding: 8px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* ADD / INSERT button */
+.add-btn {
+    background-color: #00c853; /* green */
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px 0;
+    background-color: #1a1a1a;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* REMOVE button */
+.remove-btn {
+    background-color: #d32f2f; /* red */
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effects */
+.add-btn:hover {
+    background-color: #00e676;
+}
+
+.remove-btn:hover {
+    background-color: #ff5252;
+}

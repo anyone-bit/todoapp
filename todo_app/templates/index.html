@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>📝 My To-Do List</h2>
+
+    <!-- INSERT -->
+    <form method="post">
+        <input type="text" name="task" placeholder="Enter new task">
+        <button class="add-btn" type="submit">Add</button>
+    </form>
+
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {{ task }}
+            <!-- REMOVE -->
+            <a class="remove-btn" href="/remove/{{ loop.index0 }}">Remove</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
